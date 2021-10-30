@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddingAlarmActivity"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+    
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/ic_baseline_add_alarm_24"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:textColor="@android:color/black"
+        android:textStyle="italic"
+        android:text="Alarm name"
+        android:textSize="25sp"/>
+
+    <EditText
+        android:id="@+id/alarm_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Add title"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textColor="@android:color/black"
+        android:textStyle="italic"
+        android:text="Alarm date"
+        android:textSize="25sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:textColor="@android:color/black"
+        android:textStyle="italic"
+        android:text="Add date:     "
+        android:textSize="25sp"
+        android:layout_gravity="center_vertical"/>
+
+        <Button
+            android:id="@+id/add_date_btn"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:background="@drawable/button_background"
+            android:text="Add date"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/alarm_date_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textColor="@android:color/black"
+        android:textStyle="italic"
+        android:text="00:00"
+        android:textSize="25sp"/>
+
+    <Button
+        android:id="@+id/save_alarm_btn"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:text="Save"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:background="@drawable/button_background"/>
+
+    <Button
+        android:id="@+id/cancel_alarm_btn"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:text="Cancel"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:background="@drawable/button_background"/>
+
+
+
+
+        
+
+</LinearLayout>
